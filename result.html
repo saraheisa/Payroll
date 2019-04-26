@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payroll</title>
+<link rel="stylesheet" href ="css/bootstrap.min.css">
+<link rel="stylesheet" href="fonts/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/hover.css">
+<link rel="stylesheet" href="css/animate.min.css">
+
+</head>
+
+<body>
+<nav id="navbar-example2" class="navbar fixed-top navbar-expand-lg navbar-light bg-dark lead ">
+  <a class="navbar-brand mb-0 h1 text-light" href="index.html"><img src="images/hmrc.png"> H.M.R.C</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto nav justify-content-end">
+      <li class="nav-item hvr-underline-from-center text-light">
+        <a class="nav-link text-light" href="#result">Result <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item hvr-underline-from-center text-light">
+        <a class="nav-link text-light" href="#feedback">Feedback</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="smallSection">
+        <div class="container">
+            <span class="text-center text-uppercase font-weight-bold lead done">we are done <i class="fas fa-check"></i></span>
+        </div>
+    </section>
+
+<section class="wow slideInLeft" id="result">
+        <div class="container">
+            <table class="table table-bordered">
+              <tbody>
+                <tr class="">
+                  <th scope="row">Name</th>
+                  <td>Mark</td>
+                </tr>
+                  <tr class="bg-warning">
+                  <th scope="row">Employee Code</th>
+                  <td class="">BR</td>
+                </tr>
+                <tr class="">
+                  <th scope="row">Salary</th>
+                  <td>4000$</td>
+                </tr>
+                <tr class="bg-warning">
+                  <th scope="row">Country</th>
+                  <td>British</td>
+                </tr>
+                  <tr class="">
+                  <th scope="row">Payment Method</th>
+                  <td>monthly</td>
+                </tr>
+                </tr>
+                  <tr class="bg-warning">
+                  <th scope="row">Net Profit</th>
+                  <td>12333$</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <button type="button" class="btn bg-warning text-dark hvr-bob curious text-capitalize" data-toggle="modal" data-target="#exampleModalLong">
+              curious to know how it's calculated!
+            </button>
+            <div>
+                <button type="button" class="btn bg-dark curious hvr-backward text-capitalize">
+                    <a href="index.html#calculation" class="text-white">calculate again</a>
+                </button>
+            </div>
+
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">How</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="images/curious.jpg" alt="curious image" class="img-fluid">
+                      <h3>Hello Our Employee</h3>
+                      <h4>here we will tell you our calculations to be secured</h4>
+                      <p>We use your Code and with it we get all information about you like taxable pay adjustment , your country and all all information</p> <p>also we know your pay adjustment method if it was weekly or Monthly then use it also in our calculations , 
+                        surely we use your salary and previous pay to date in our calculations, so we must know them.</p>
+                        <p>Sorry we can't tell you more information to be secured .</p>
+                      </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+<section class="section bg-light" id="feedback">
+        <div>
+            <p class="text-center font-weight-bold lead">We would like to hear from <span>you</span></p>
+        </div>
+        <div class="container wow slideInRight">
+            <div class="row log">
+                <div class="col img">       
+                </div>
+                <div class="col form">
+                    <form>
+                      <div class="form-group">
+                        <label for="title" class="col-sm-2 col-form-label col-form-label-lg">Title</label>
+                        <input type="email" class="form-control form-control-lg" id="title" aria-describedby="emailHelp" placeholder="Message title">
+                      </div>
+                      <div class="form-group">
+                        <label for="message" class="col-sm-2 col-form-label col-form-label-lg">Message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="type your message..."></textarea>
+                      </div>
+                      <button type="button" class="btn btn-warning btn-lg btn-block hvr-bob">SEND FEEDBACK</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<footer id="footer">
+    <div class="container text-center font-weight-light font-monospace bg-dark text-white mw-100">
+        copyright &copy; 
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    $('.nav li a').on('click', function (event) {
+        event.preventDefault();
+        var target = $(this).attr('href');
+        var offsetTop = $(target).offset().top;
+        $('html, body').animate({
+            scrollTop: offsetTop
+        }, 1000);
+
+    });
+
+    new WOW().init();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+/* yanone-kaffeesatz-regular - latin */
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/yanone-kaffeesatz-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'),
+       url('../fonts/yanone-kaffeesatz-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/yanone-kaffeesatz-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/yanone-kaffeesatz-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/yanone-kaffeesatz-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/yanone-kaffeesatz-v9-latin-regular.svg#YanoneKaffeesatz') format('svg'); /* Legacy iOS */
+}
+
+/* patrick-hand-sc-regular - latin */
+@font-face {
+  font-family: 'Patrick Hand SC';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/patrick-hand-sc-v5-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Patrick Hand SC'), local('PatrickHandSC-Regular'),
+       url('../fonts/patrick-hand-sc-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/patrick-hand-sc-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/patrick-hand-sc-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/patrick-hand-sc-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/patrick-hand-sc-v5-latin-regular.svg#PatrickHandSC') format('svg'); /* Legacy iOS */
+}
+
+/* khand-700 - latin */
+@font-face {
+  font-family: 'Khand';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/khand-v6-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Khand Bold'), local('Khand-Bold'),
+       url('../fonts/khand-v6-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/khand-v6-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/khand-v6-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/khand-v6-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/khand-v6-latin-700.svg#Khand') format('svg'); /* Legacy iOS */
+}
+
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Regular'),
+       url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.section {
+    min-height: 1000px;
+    overflow: hidden;
+    position: 'relative';
+    padding: 150px 10px 0px;
+}
+
+.smallSection{
+    overflow: hidden;
+    position: 'relative';
+    padding: 150px 10px 0px;
+}
+
+.nav{
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+.media{
+    margin: 3em;
+}
+
+#head{
+    background-size: cover;
+}
+
+.jumbotron{
+    background-color: rgba(255, 255, 255, .5);    
+}
+#feedback, #calculation{
+    -webkit-clip-path: polygon(0 0, 100% 8%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 8%, 100% 100%, 0% 100%);
+    background-color: #E5E4D7;
+}
+
+
+.img{
+    background: url(../images/login.png) no-repeat center center;
+    background-color: rgb(242, 156, 58);
+    background-size: contain;
+    min-height: 500px;
+    min-width: 500px;
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.log{
+    display:flex;
+    background-color: #fff;
+    margin: auto;
+}
+
+.form{
+    padding: 100px;
+}
+#calculation .container{
+    background-color: #fff;
+    padding: 5em;
+    min-height: 800px;
+    background-image: url(../images/pen.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    box-shadow: 15px 15px 10px #aaaaaa;
+}
+#calculation .container form{
+    margin: auto;
+}
+#footer .container{
+    padding: .7em;
+}
+
+.done{
+    font-size: 6rem;
+    font-family: 'Khand', sans-serif;
+}
+
+#result .container{
+    padding: 3em;
+}
+
+.curious{
+    margin-top: 4em;
+    font-family: 'Yanone Kaffeesatz';
+    font-size: 1.5em;
+}
+#feedback p{
+    font-family: 'Patrick Hand SC', sans-serif;
+    font-size: 3rem;
+    color: #f2862e;
+}
+#feedback p span{
+    color: #f44242;
+}
+#feedback .container{
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+#feedback .container btn{
+    font-family: 'Yanone Kaffeesatz';
+    font-size: 1.5em;
+}
+
+.downarrow{
+    margin: auto;
+    width: 10%;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 3%;
+}
+
+.downarrow a{
+    color: rgb(242, 156, 58);
+}
+
+.bounce {
+	-moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payroll</title>
+<link rel="stylesheet" href ="css/bootstrap.min.css">
+<link rel="stylesheet" href="fonts/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/hover.css">
+<link rel="stylesheet" href="css/animate.min.css">
+
+</head>
+
+<body>
+<nav id="navbar-example2" class="navbar fixed-top navbar-expand-lg navbar-light bg-dark lead">
+<a class="navbar-brand mb-0 h1 text-light" href="#"><img src="images/hmrc.png"> H.M.R.C</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto nav justify-content-end">
+
+    <li class="nav-item hvr-underline-from-center">
+    <a class="nav-link text-light" href="#head">Description</a>
+  </li>
+    <li class="nav-item hvr-underline-from-center">
+    <a class="nav-link text-light" href="#calculation">Calculate</a>
+  </li>
+
+</ul>
+</div>
+</nav>
+
+<header class="section" id="head">
+<div class="container" >
+    <div class="row">
+      <div class="col wow slideInLeft">
+          <div class="media">
+          <img class="mr-3" src="images/New-Payroll-Icon.png" width="64" height="64" alt="Generic placeholder image">
+          <div class="media-body">
+            <h5 class="mt-0">Media heading</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </div>
+        </div>
+        </div>
+        <div class="col wow slideInRight">
+            <div class="media">
+              <img class="mr-3" src="images/payroll-image.png" width="64" height="64" alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0">Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </div>
+        </div>
+      <div class="w-100"></div>
+      <div class="col wow slideInLeft">
+          <div class="media">
+            <img class="mr-3" src="images/employee-self-service.png" width="64" height="64" alt="Generic placeholder image">
+            <div class="media-body">
+            <h5 class="mt-0">Media heading</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </div>
+    </div>
+      <div class="col wow slideInRight">
+          <div class="media">
+          <img class="mr-3" src="images/open-payroll-icon-rgb.png" width="64" height="64" alt="Generic placeholder image">
+          <div class="media-body">
+            <h5 class="mt-0">Media heading</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="downarrow bounce">
+    <a href="#calculation"><i class="fas fa-angle-double-down"></i></a>
+</div>
+</header>
+
+<section id="calculation" class="section lead">
+<div class="container wow slideInRight">
+    <form>
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-3 col-form-label">Name</label>
+        <div class="col-sm-4">
+          <input type="text" name="nameInput" class="form-control" id="inputEmail3" placeholder="Jhon.G Doe" required>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputCode" class="col-sm-3 col-form-label">Employee Code</label>
+        <div class="col-sm-3">
+          <input type="text" name="codeInput" class="form-control" id="inputCode" placeholder="BR" required>
+        </div>
+      </div>
+    <div class="form-group row">
+          <label class="col-sm-3 col-form-label" for="inputSalary">Salary</label>
+          <div class="input-group mb-2 col-sm-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text bg-warning text-light">$</div>
+            </div>
+            <input type="text" name="salaryInput" class="form-control" id="inputSalary" placeholder="" required>
+          </div>
+    </div>
+    <div class="form-group row">
+          <label class="col-sm-3 col-form-label" for="inputpreviouspaytodate">Previous Pay to Date</label>
+          <div class="input-group mb-2 col-sm-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text bg-warning text-light">$</div>
+            </div>
+            <input type="text" name="previousPayToDateInput" class="form-control" id="inputpreviouspaytodate" placeholder="" required>
+          </div>
+    </div>
+    <div class="form-group row">
+          <label class="col-sm-3 col-form-label" for="inputcountry">Country</label>
+          <div class="input-group mb-2 col-sm-4">
+              <select name="countryInput" id="inputcountry" class="form-control" required>
+                <option selected>British</option>
+                <option>Scottich</option>
+              </select>
+        </div>
+    </div>
+    <div class="form-group row">
+          <label class="col-sm-3 col-form-label" for="inputpaymentmethod">Payment Method</label>
+          <div class="input-group mb-2 col-sm-4">
+              <select name="paymentMethodInput" id="inputpaymentmethod" class="form-control" required>
+                <option selected>Weekly</option>
+                <option>Monthly</option>
+              </select>
+        </div>
+    </div>
+    <div class="form-group row">
+          <label class="col-sm-3 col-form-label" for="inputstartdate">Start Date</label>
+          <div class="input-group mb-2 col-sm-4">
+              <div class="input-group date" data-provide="datepicker">
+                <input type="date" name="startDateInput" class="form-control" id="inputstartdate" required>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+          <label class="col-sm-3 col-form-label" for="inputenddate">End Date</label>
+          <div class="input-group mb-2 col-sm-4">
+              <div class="input-group date" data-provide="datepicker">
+                <input type="date" name="endDateInput" class="form-control" id="inputenddate" required>
+            </div>
+        </div>
+    </div>
+      <div class="form-group row">
+        <div class="col-sm-8">
+          <a href="result.html"><button type="button" class="btn bg-light btn-lg btn-block text-uppercase hvr-bounce-to-right">Calculate</button></a>
+        </div>
+      </div>
+    </form>
+</div>
+</section>
+
+<footer id="footer">
+<div class="container text-center font-weight-light font-monospace bg-dark text-white mw-100">
+    copyright
+</div>
+</footer>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jQuery.min.js"></script>
+
+
+<script>
+
+$('.nav li a').on('click', function (event) {
+event.preventDefault();
+var target = $(this).attr('href');
+var offsetTop = $(target).offset().top;
+$('html, body').animate({
+    scrollTop: offsetTop
+}, 1000);
+
+});
+
+$('.downarrow a').on('click', function (event) {
+event.preventDefault();
+var target = $(this).attr('href');
+var offsetTop = $(target).offset().top;
+$('html, body').animate({
+    scrollTop: offsetTop
+}, 1000);
+
+});
+    
+    
+
+new WOW().init();
+
+</script>
+</body>
+
+</html>
